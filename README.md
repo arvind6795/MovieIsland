@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+MovieIsland – React Movie Search App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+MovieIsland is a lightweight and responsive movie search application built using React.js and the OMDb API.
+Users can search for movies by title and instantly see results with posters, release year, and type.
 
-## Available Scripts
+🚀 Features
 
-In the project directory, you can run:
+🔍 Real-time Movie Search using OMDb API
 
-### `npm start`
+🧩 Reusable components (MovieCard)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+⚡ Fast and responsive UI
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🎨 Minimal & clean design
 
-### `npm test`
+📦 Built using React Hooks (useState, useEffect)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🛠️ Tech Stack
 
-### `npm run build`
+React.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+JavaScript (ES6+)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+OMDb API
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+CSS
 
-### `npm run eject`
+📁 Project Structure
+MovieIsland/
+│── public/
+│── src/
+│   ├── App.js
+│   ├── MovieCard.jsx
+│   ├── App.css
+│   ├── search.svg
+│   └── index.js
+│── package.json
+└── README.md
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+▶️ Getting Started
+1. Clone the Repository
+git clone https://github.com/your-username/MovieIsland.git
+cd MovieIsland
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install Dependencies
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Start the App
+npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+App will run at:
+👉 http://localhost:3000
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🔑 Environment / API Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project uses the OMDb API.
+Generate your own API Key from:
+https://www.omdbapi.com/
 
-### Code Splitting
+Inside App.js, update:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+const API_URL = "http://www.omdbapi.com/?apikey=YOUR_API_KEY";
 
-### Analyzing the Bundle Size
+📸 Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+(Add screenshots if you want — I can generate sample UI mockups too.)
 
-### Making a Progressive Web App
+🧩 Core Components
+App.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Manages search input, API calls, and movie list.
 
-### Advanced Configuration
+Uses:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+useState for data/state
 
-### Deployment
+useEffect for default search
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+MovieCard.jsx
 
-### `npm run build` fails to minify
+Displays:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Movie Poster
+
+Title
+
+Year
+
+Type
+
+🌍 API Example
+fetch(`${API_URL}&s=batman`)
+
+
+Response includes:
+
+Title
+
+Year
+
+Type
+
+Poster
+
+🤝 Contributing
+
+Feel free to fork this repository and enhance the UI or add new features.
